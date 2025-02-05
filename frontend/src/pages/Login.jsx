@@ -26,7 +26,7 @@ function Login() {
     return handleError('name,email,password are required');
   }
    try{
-    const url="http://localhost:8080/auth/login";
+    const url="https://authentication-app-api-nu.vercel.app/auth/login";
     const response=await fetch(url,{
    method:"POST",
    headers:{
